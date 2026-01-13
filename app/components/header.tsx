@@ -41,7 +41,7 @@ const ModernHeader = () => {
               V
             </div>
             <span className="font-bold tracking-tighter text-xl text-white hidden sm:block">
-              VIKAS BABU [cite: 1]
+              VIKAS BABU
             </span>
           </motion.div>
 

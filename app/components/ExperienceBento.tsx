@@ -35,7 +35,7 @@ const ExperienceBento = () => {
             <h3 className="text-2xl font-bold mb-2">NIT Hamirpur</h3>
             <p className="text-gray-400">B.Tech in Mathematics and Scientific Computing</p>
             <div className="mt-4 flex items-center gap-4">
-              <span className="text-3xl font-mono font-bold text-white">6.91</span>
+              <span className="text-3xl font-mono font-bold text-white">7.04</span>
               <span className="text-xs uppercase tracking-widest text-gray-500">Current CGPA</span>
             </div>
             {/* Subtle background glow */}

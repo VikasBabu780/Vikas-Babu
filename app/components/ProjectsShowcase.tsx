@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Layers, Zap, Cloud, Smartphone } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 
 const ProjectsShowcase = () => {
   const mainProjects = [
@@ -8,6 +9,7 @@ const ProjectsShowcase = () => {
       title: "JOB PORTAL",
       tech: ["React JS", "Node JS", "Mongo DB", "Cloudinary", "Shadcn UI"],
       desc: "Full-stack ecosystem for career management.",
+      url: "https://jobkart.vercel.app",
       color: "from-blue-600 to-cyan-500",
       icon: <Layers size={24} />
     },
@@ -15,6 +17,7 @@ const ProjectsShowcase = () => {
       title: "KLIMA",
       tech: ["Next JS", "Climate API", "Tanstack Query", "Shadcn UI"],
       desc: "High-performance real-time climate tracking.",
+      url: "https://klimanow.vercel.app",
       color: "from-emerald-500 to-teal-400",
       icon: <Cloud size={24} />
     }
@@ -26,6 +29,8 @@ const ProjectsShowcase = () => {
     { name: "BMI Calculator", tools: "React JS" },
     { name: "Guessing Game", tools: "JS" }
   ];
+
+  const router  = useRouter();
 
   return (
     <section className="bg-black py-32 px-6 relative overflow-hidden">
@@ -74,7 +79,7 @@ const ProjectsShowcase = () => {
 
                 <div className="flex gap-4">
                   <button className="flex items-center gap-2 px-6 py-2 bg-white text-black rounded-full font-bold text-sm hover:bg-blue-500 hover:text-white transition-all">
-                    Live Demo <ExternalLink size={14} />
+                    Live Demo <ExternalLink size={14} onClick={() => router.push(project.url)} />
                   </button>
                   <button className="p-2 border border-white/10 rounded-full hover:bg-white/5 transition-colors">
                     <Github size={20} className="text-white" />
