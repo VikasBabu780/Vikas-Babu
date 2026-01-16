@@ -77,9 +77,9 @@ const ProjectsShowcase = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-4">
+                <div className="flex gap-4" onClick={() => router.push(project.url)}>
                   <button className="flex items-center gap-2 px-6 py-2 bg-white text-black rounded-full font-bold text-sm hover:bg-blue-500 hover:text-white transition-all">
-                    Live Demo <ExternalLink size={14} onClick={() => router.push(project.url)} />
+                    Live Demo <ExternalLink size={14}  />
                   </button>
                   <button className="p-2 border border-white/10 rounded-full hover:bg-white/5 transition-colors">
                     <Github size={20} className="text-white" />
