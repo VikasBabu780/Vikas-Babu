@@ -24,10 +24,10 @@ const ProjectsShowcase = () => {
   ];
 
   const miniProjects = [
-    { name: "Netflix Clone", tools: "HTML, CSS, JS" },
-    { name: "Amazon Clone", tools: "HTML, CSS, JS" },
-    { name: "BMI Calculator", tools: "React JS" },
-    { name: "Guessing Game", tools: "JS" }
+    {name: "Todo List" ,tools: "HTML, CSS, JS, ReactJS" , url:"https://vikasbabu780todo.netlify.app"},
+    { name: "Guessing Game", tools: "HTML, CSS, JS" , url: "https://guess-game-phi-five.vercel.app/"},
+    { name: "BMI Calculator", tools: "HTML, CSS, JS" , url: "https://body-mass-index-seven.vercel.app/"},
+    { name: "Amazon Clone", tools: "HTML, CSS, JS", url: "" }
   ];
 
   const router  = useRouter();
@@ -77,11 +77,11 @@ const ProjectsShowcase = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-4" onClick={() => router.push(project.url)}>
-                  <button className="flex items-center gap-2 px-6 py-2 bg-white text-black rounded-full font-bold text-sm hover:bg-blue-500 hover:text-white transition-all">
+                <div className="flex gap-4">
+                  <button onClick={() => router.push(project.url)} className="flex items-center cursor-pointer gap-2 px-6 py-2 bg-white text-black rounded-full font-bold text-sm hover:bg-blue-500 hover:text-white transition-all">
                     Live Demo <ExternalLink size={14}  />
                   </button>
-                  <button className="p-2 border border-white/10 rounded-full hover:bg-white/5 transition-colors">
+                  <button onClick={() => router.push(project.url)} className="p-2 border border-white/10 rounded-full hover:bg-white/5 transition-colors">
                     <Github size={20} className="text-white" />
                   </button>
                 </div>
@@ -90,7 +90,7 @@ const ProjectsShowcase = () => {
           ))}
         </div>
 
-        {/* Small Projects - Marquee/Grid */}
+       {/* Small Projects */}
         <div className="mt-24">
           <h4 className="text-sm uppercase tracking-[0.3em] text-gray-500 font-bold mb-8 text-center">
             Development Experiments
@@ -102,11 +102,25 @@ const ProjectsShowcase = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: i * 0.1 }}
-                className="p-6 bg-zinc-900/30 border border-white/5 rounded-2xl hover:bg-zinc-800/50 transition-all group"
+                onClick={() => mini.url && window.open(mini.url, '_blank')}
+                className="p-6 bg-zinc-900/30 border border-white/5 rounded-2xl hover:bg-zinc-800/50 transition-all group relative cursor-pointer overflow-hidden"
               >
-                <Zap size={16} className="text-yellow-500 mb-3 group-hover:scale-125 transition-transform" />
-                <h5 className="text-white font-bold text-sm mb-1">{mini.name}</h5>
-                <p className="text-xs text-gray-500">{mini.tools}</p>
+                <div className="flex justify-between items-start mb-3">
+                  <Zap size={16} className="text-yellow-500 group-hover:scale-125 transition-transform" />
+                  {mini.url && <ExternalLink size={14} className="text-gray-600 group-hover:text-blue-400 transition-colors" />}
+                </div>
+
+                <h5 className="text-white font-bold text-sm mb-1 group-hover:text-blue-400 transition-colors">
+                  {mini.name}
+                </h5>
+                <p className="text-xs text-gray-500 mb-4">{mini.tools}</p>
+                
+                {/* View Demo Button - Slides in on hover */}
+                {mini.url && (
+                  <div className="flex items-center gap-1 text-[10px] font-bold text-blue-500 uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+                    Live Demo <ExternalLink size={10} />
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>
