@@ -7,6 +7,8 @@ import {
   Zap,
   Cloud,
   Smartphone,
+  Briefcase,
+  ShoppingCart,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
 
@@ -15,18 +17,18 @@ const ProjectsShowcase = () => {
     {
       title: "UTUBE",
       tech: ["React JS", "Node JS", "Mongo DB", "Cloudinary", "Shadcn UI"],
-      desc: "A full-stack platform for managing careers, profiles, and professional networking.",
-      url: "https://backend-project-red.vercel.app",
+      desc: "Streamlined full-stack platform to manage careers, profiles, and networking seamlessly.",
+      url: "https://jobkart.vercel.app",
       color: "from-blue-600 to-cyan-500",
-      icon: <Layers size={24} />,
+      icon: <Briefcase size={24} />, 
     },
     {
       title: "FOOD APP",
-      tech: ["Next JS", "Climate API", "Tanstack Query", "Shadcn UI"],
-      desc: "A full-featured food ordering and tracking application with real-time updates.",
-      url: "https://food-app-kappa-six.vercel.app",
+      tech: ["Next JS", "Mongo Db", "React TS", "Cloudinary","Shadcn UI"],
+      desc: "Dynamic food ordering app with real-time updates and intuitive UI for a smooth experience.",
+      url: "https://klimanow.vercel.app",
       color: "from-emerald-500 to-teal-400",
-      icon: <Cloud size={24} />,
+      icon: <ShoppingCart size={24} />, 
     },
     {
       title: "JOB PORTAL",

@@ -29,7 +29,7 @@ const GrowthSummary = () => {
                   <Target size={18} /> LeetCode Consistency
                 </h4>
                 <p className="text-gray-400 text-sm">
-                  Solving <span className="text-white font-bold">100+ problems</span> while maintaining continuous activity. This reflects my discipline in algorithmic thinking and daily habit of coding.
+                  Solving <span className="text-white font-bold">150+ problems</span> while maintaining continuous activity. This reflects my discipline in algorithmic thinking and daily habit of coding.
                 </p>
               </div>
 
