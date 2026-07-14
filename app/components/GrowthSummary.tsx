@@ -38,7 +38,7 @@ const GrowthSummary = () => {
                   <Code size={18} /> Project Velocity
                 </h4>
                 <p className="text-gray-400 text-sm">
-                  From deep MERN stack builds like my <span className="text-white font-bold">UTUBE</span> [cite: 16, 17] to high-performance Next JS apps like <span className="text-white font-bold">FoodSwift</span>[cite: 18, 19], I translate complex requirements into working software.
+                  From deep MERN stack builds like my <span className="text-white font-bold">UTUBE</span>  to high-performance Next JS apps like <span className="text-white font-bold">FoodSwift</span> I translate complex requirements into working software.
                 </p>
               </div>
             </div>

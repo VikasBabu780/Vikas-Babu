@@ -5,7 +5,6 @@ import {
   Github,
   Layers,
   Zap,
-  Cloud,
   Briefcase,
   ShoppingCart,
 } from "lucide-react";
@@ -18,32 +17,27 @@ const ProjectsShowcase = () => {
       tech: ["React JS", "Node JS", "Mongo DB", "Cloudinary", "Shadcn UI"],
       desc: "Streamlined full-stack platform to manage careers, profiles, and networking seamlessly.",
       url: "https://backend-project-red.vercel.app",
+      github: "https://github.com/VikasBabu780/backend_Project",
       color: "from-blue-600 to-cyan-500",
-      icon: <Briefcase size={24} />, 
+      icon: <Briefcase size={24} />,
     },
     {
       title: "FOOSwift",
-      tech: ["Next JS", "Mongo Db", "React TS", "Cloudinary","Shadcn UI"],
+      tech: ["Next JS", "Mongo Db", "React TS", "Cloudinary", "Shadcn UI"],
       desc: "Dynamic food ordering app with real-time updates and intuitive UI for a smooth experience.",
       url: "https://food-app-kappa-six.vercel.app",
+      github: "https://github.com/VikasBabu780/food-app",
       color: "from-emerald-500 to-teal-400",
-      icon: <ShoppingCart size={24} />, 
+      icon: <ShoppingCart size={24} />,
     },
     {
       title: "JOB PORTAL",
       tech: ["React JS", "Node JS", "Mongo DB", "Cloudinary", "Shadcn UI"],
       desc: "Full-stack ecosystem for career management.",
       url: "https://jobkart.vercel.app",
+      github: "https://github.com/VikasBabu780/job-portal-backend",
       color: "from-blue-600 to-cyan-500",
       icon: <Layers size={24} />,
-    },
-    {
-      title: "KLIMA",
-      tech: ["Next JS", "Climate API", "Tanstack Query", "Shadcn UI"],
-      desc: "High-performance real-time climate tracking.",
-      url: "https://klimanow.vercel.app",
-      color: "from-emerald-500 to-teal-400",
-      icon: <Cloud size={24} />,
     },
   ];
 
@@ -123,13 +117,13 @@ const ProjectsShowcase = () => {
 
                 <div className="flex gap-4">
                   <button
-                    onClick={() => router.push(project.url)}
+                    onClick={() => window.open(project.url, "_blank")}
                     className="flex items-center cursor-pointer gap-2 px-6 py-2 bg-white text-black rounded-full font-bold text-sm hover:bg-blue-500 hover:text-white transition-all"
                   >
                     Live Demo <ExternalLink size={14} />
                   </button>
                   <button
-                    onClick={() => router.push(project.url)}
+                    onClick={() => window.open(project.github, "_blank")}
                     className="p-2 border border-white/10 rounded-full hover:bg-white/5 transition-colors"
                   >
                     <Github size={20} className="text-white" />

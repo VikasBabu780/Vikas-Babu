@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Database, Globe, Terminal, Cpu, PenTool as Tool } from 'lucide-react';
+import { Database, Globe, Terminal, Cpu, PenTool as Tool ,FileCode2} from 'lucide-react';
 
 const SkillsMatrix = () => {
   const containerVars = {
@@ -104,6 +104,7 @@ const SkillsMatrix = () => {
                 <p className="text-xs font-bold text-white">MATLAB</p>
               </div>
               <div className="p-4 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center">
+              <FileCode2 className="text-blue-500 mb-2" size={16} />
                 <p className="text-[10px] text-gray-500 uppercase tracking-tighter">VS Code/Excel</p>
               </div>
             </div>
