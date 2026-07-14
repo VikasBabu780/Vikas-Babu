@@ -105,7 +105,7 @@ const SkillsMatrix = () => {
               </div>
               <div className="p-4 rounded-2xl bg-white/5 border border-white/5 ">
               <FileCode2 className="text-emerald-500 mb-2" size={16} />
-                <p className="text-xs font-bold text-white">VS Code/Excel</p>
+                <p className="text-xs font-bold text-white">VS Code / Excel</p>
               </div>
             </div>
           </motion.div>
