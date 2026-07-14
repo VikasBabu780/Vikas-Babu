@@ -6,7 +6,6 @@ import {
   Layers,
   Zap,
   Cloud,
-  Smartphone,
   Briefcase,
   ShoppingCart,
 } from "lucide-react";
@@ -18,15 +17,15 @@ const ProjectsShowcase = () => {
       title: "UTUBE",
       tech: ["React JS", "Node JS", "Mongo DB", "Cloudinary", "Shadcn UI"],
       desc: "Streamlined full-stack platform to manage careers, profiles, and networking seamlessly.",
-      url: "https://jobkart.vercel.app",
+      url: "https://backend-project-red.vercel.app",
       color: "from-blue-600 to-cyan-500",
       icon: <Briefcase size={24} />, 
     },
     {
-      title: "FOOD APP",
+      title: "FOOSwift",
       tech: ["Next JS", "Mongo Db", "React TS", "Cloudinary","Shadcn UI"],
       desc: "Dynamic food ordering app with real-time updates and intuitive UI for a smooth experience.",
-      url: "https://klimanow.vercel.app",
+      url: "https://food-app-kappa-six.vercel.app",
       color: "from-emerald-500 to-teal-400",
       icon: <ShoppingCart size={24} />, 
     },
@@ -72,7 +71,7 @@ const ProjectsShowcase = () => {
   return (
     <section className="bg-black py-32 px-6 relative overflow-hidden">
       {/* Abstract Background Element */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
@@ -82,7 +81,7 @@ const ProjectsShowcase = () => {
         >
           <h2 className="text-5xl font-black tracking-tighter text-white mb-4">
             FEATURED{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-500">
               BUILDS
             </span>
           </h2>
@@ -95,11 +94,11 @@ const ProjectsShowcase = () => {
             <motion.div
               key={idx}
               whileHover={{ y: -10 }}
-              className="group relative bg-zinc-900/40 border border-white/5 rounded-[2rem] p-1 overflow-hidden"
+              className="group relative bg-zinc-900/40 border border-white/5 rounded-4xl p-1 overflow-hidden"
             >
               <div className="bg-zinc-950 rounded-[1.8rem] p-8 h-full">
                 <div
-                  className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${project.color} flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20`}
+                  className={`w-12 h-12 rounded-2xl bg-linear-to-br ${project.color} flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20`}
                 >
                   {project.icon}
                 </div>

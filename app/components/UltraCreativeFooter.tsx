@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Send, MapPin, Sparkles, ArrowUpRight, Github, Linkedin, Mail } from 'lucide-react';
+import { Send, MapPin, Sparkles, Github, Linkedin, Mail } from 'lucide-react';
 
 const UltraCreativeFooter = () => {
   return (
     <footer className="relative bg-black py-24 px-6 overflow-hidden border-t border-white/5">
       {/* Background Radial Glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-125 bg-blue-600/10 blur-[120px] rounded-full pointer-events-none" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -22,7 +22,7 @@ const UltraCreativeFooter = () => {
             </div>
             <h2 className="text-6xl md:text-7xl font-black text-white leading-tight tracking-tighter mb-8">
               READY TO <br /> 
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-500">
                 CONNECT?
               </span>
             </h2>
@@ -45,7 +45,7 @@ const UltraCreativeFooter = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             className="relative group"
           >
-            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <div className="absolute -inset-1 bg-linear-to-r from-blue-600 to-purple-600 rounded-[2.5rem] blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
             <div className="relative bg-zinc-950 border border-white/10 rounded-[2.5rem] p-10 flex flex-col items-center text-center">
               <p className="text-gray-400 mb-8 max-w-xs">
                 Have a project in mind or just want to discuss Mathematics & Computing? [cite: 5]
@@ -62,8 +62,8 @@ const UltraCreativeFooter = () => {
               </motion.a>
 
               <div className="grid grid-cols-3 gap-6 mt-12 w-full">
-                <SocialLink href="https://github.com" icon={<Github />} label="GitHub" /> 
-                <SocialLink href="https://linkedin.com" icon={<Linkedin />} label="LinkedIn" /> 
+                <SocialLink href="https://github.com/VikasBabu780" icon={<Github />} label="GitHub" /> 
+                <SocialLink href="https://in.linkedin.com/in/vikas-babu-063758323" icon={<Linkedin />} label="LinkedIn" /> 
                 <SocialLink href="mailto:babuvikas246@gmail.com" icon={<Mail />} label="Email" /> 
               </div>
             </div>
@@ -79,7 +79,7 @@ const UltraCreativeFooter = () => {
           
           <div className="flex gap-8 text-xs font-medium text-gray-500 uppercase tracking-[0.2em]">
             <a href="#" className="hover:text-white transition-colors">Back to Top</a>
-            <a href="https://leetcode.com" className="hover:text-white transition-colors">LeetCode </a>
+            <a href="https://leetcode.com/u/VikasBabu246" className="hover:text-white transition-colors">LeetCode </a>
           </div>
         </div>
       </div>

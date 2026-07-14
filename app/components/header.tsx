@@ -37,7 +37,7 @@ const ModernHeader = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-2 cursor-pointer"
           >
-            <div className="w-8 h-8 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-lg flex items-center justify-center font-bold text-white">
+            <div className="w-8 h-8 bg-linear-to-tr from-blue-600 to-purple-600 rounded-lg flex items-center justify-center font-bold text-white">
               V
             </div>
             <span className="font-bold tracking-tighter text-xl text-white hidden sm:block">
@@ -62,8 +62,8 @@ const ModernHeader = () => {
           {/* Socials & CTA  */}
           <div className="flex items-center gap-4">
             <div className="hidden sm:flex items-center gap-3 border-r border-white/10 pr-4 mr-1">
-              <HeaderIcon href="https://github.com" icon={<Github size={18} />} />
-              <HeaderIcon href="https://linkedin.com" icon={<Linkedin size={18} />} />
+              <HeaderIcon href="https://github.com/VikasBabu780" icon={<Github size={18} />} />
+              <HeaderIcon href="https://in.linkedin.com/in/vikas-babu-063758323" icon={<Linkedin size={18} />} />
             </div>
             
             <motion.a

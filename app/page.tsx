@@ -21,7 +21,7 @@ const Page = () => {
     <main className="relative bg-black selection:bg-blue-500/30 selection:text-blue-200">
       {/* 1. Global Progress Bar (Ultra-Modern Touch) */}
       <motion.div 
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-purple-500 to-emerald-500 z-[60] origin-left"
+        className="fixed top-0 left-0 right-0 h-1 bg-linear-to-r from-blue-600 via-purple-500 to-emerald-500 z-60 origin-left"
         style={{ scaleX }}
       />
 

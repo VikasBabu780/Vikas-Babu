@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Database, Globe, Terminal, Cpu, PenTool as Tool } from 'lucide-react';
+import { Database, Globe, Terminal, Cpu, PenTool as Tool } from 'lucide-react';
 
 const SkillsMatrix = () => {
   const containerVars = {
@@ -19,7 +19,7 @@ const SkillsMatrix = () => {
   return (
     <section className="bg-black py-24 px-6 relative overflow-hidden">
       {/* Background Decorative Mesh */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none bg-[radial-gradient(#22d3ee_0.5px,transparent_0.5px)] [background-size:24px_24px]" />
+      <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none bg-[radial-gradient(#22d3ee_0.5px,transparent_0.5px)] bg-size-[24px_24px]" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div 
@@ -41,7 +41,7 @@ const SkillsMatrix = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {/* Section 1: Core Languages */}
-          <motion.div variants={itemVars} className="group p-8 rounded-[2rem] bg-zinc-900/30 border border-white/5 hover:border-blue-500/30 transition-all duration-500">
+          <motion.div variants={itemVars} className="group p-8 rounded-4xl bg-zinc-900/30 border border-white/5 hover:border-blue-500/30 transition-all duration-500">
             <div className="flex items-center gap-4 mb-8">
               <div className="p-3 rounded-2xl bg-blue-500/10 text-blue-400 group-hover:scale-110 transition-transform">
                 <Terminal size={28} />
@@ -52,7 +52,7 @@ const SkillsMatrix = () => {
               {['Python', 'Java', 'C++', 'C', 'JavaScript'].map((lang) => (
                 <div key={lang} className="flex justify-between items-center group/item">
                   <span className="text-gray-400 group-hover/item:text-white transition-colors">{lang}</span>
-                  <div className="h-[1px] flex-grow mx-4 bg-white/10 group-hover/item:bg-blue-500/50 transition-all" />
+                  <div className="h-px grow mx-4 bg-white/10 group-hover/item:bg-blue-500/50 transition-all" />
                   <span className="text-[10px] font-bold text-blue-500/60 uppercase tracking-widest">Core</span>
                 </div>
               ))}
@@ -60,7 +60,7 @@ const SkillsMatrix = () => {
           </motion.div>
 
           {/* Section 2: Web Development */}
-          <motion.div variants={itemVars} className="group p-8 rounded-[2rem] bg-zinc-900/30 border border-white/5 hover:border-purple-500/30 transition-all duration-500 md:scale-105 z-20 shadow-2xl shadow-purple-500/5">
+          <motion.div variants={itemVars} className="group p-8 rounded-4xl bg-zinc-900/30 border border-white/5 hover:border-purple-500/30 transition-all duration-500 md:scale-105 z-20 shadow-2xl shadow-purple-500/5">
             <div className="flex items-center gap-4 mb-8">
               <div className="p-3 rounded-2xl bg-purple-500/10 text-purple-400 group-hover:scale-110 transition-transform">
                 <Globe size={28} />
@@ -83,7 +83,7 @@ const SkillsMatrix = () => {
           </motion.div>
 
           {/* Section 3: Databases & Engineering Tools */}
-          <motion.div variants={itemVars} className="group p-8 rounded-[2rem] bg-zinc-900/30 border border-white/5 hover:border-emerald-500/30 transition-all duration-500">
+          <motion.div variants={itemVars} className="group p-8 rounded-4xl bg-zinc-900/30 border border-white/5 hover:border-emerald-500/30 transition-all duration-500">
             <div className="flex items-center gap-4 mb-8">
               <div className="p-3 rounded-2xl bg-emerald-500/10 text-emerald-400 group-hover:scale-110 transition-transform">
                 <Database size={28} />
@@ -104,7 +104,7 @@ const SkillsMatrix = () => {
                 <p className="text-xs font-bold text-white">MATLAB</p>
               </div>
               <div className="p-4 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center">
-                <p className="text-[10px] text-gray-500 uppercase tracking-tighter">VS Code / Excel</p>
+                <p className="text-[10px] text-gray-500 uppercase tracking-tighter">VS Code/Excel</p>
               </div>
             </div>
           </motion.div>

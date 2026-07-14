@@ -35,7 +35,7 @@ const ExperienceBento = () => {
             <h3 className="text-2xl font-bold mb-2">NIT Hamirpur</h3>
             <p className="text-gray-400">B.Tech in Mathematics and Scientific Computing</p>
             <div className="mt-4 flex items-center gap-4">
-              <span className="text-3xl font-mono font-bold text-white">7.04</span>
+              <span className="text-3xl font-mono font-bold text-white">7.18</span>
               <span className="text-xs uppercase tracking-widest text-gray-500">Current CGPA</span>
             </div>
             {/* Subtle background glow */}
@@ -80,7 +80,7 @@ const ExperienceBento = () => {
             <div className="flex justify-between items-start">
               <div>
                 <Award className="text-yellow-500 mb-4" size={32} />
-                <h3 className="text-3xl font-black">100+</h3>
+                <h3 className="text-3xl font-black">250+</h3>
                 <p className="text-gray-400">Problems Solved on LeetCode</p>
                 <p className="text-xs text-yellow-500/70 mt-2 uppercase font-bold tracking-tighter">Continuously Active</p>
               </div>
