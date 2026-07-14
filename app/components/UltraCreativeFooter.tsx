@@ -51,12 +51,12 @@ const UltraCreativeFooter = () => {
                 Computing?
               </p>
 
-              <motion.button
+              <motion.a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=babuvikas246@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => {
-                  window.location.href = "mailto:babuvikas246@gmail.com";
-                }}
                 className="group relative flex items-center gap-3 bg-white text-black px-10 py-5 rounded-2xl font-black text-lg hover:bg-blue-500 hover:text-white transition-all duration-300"
               >
                 SAY HELLO
@@ -64,7 +64,7 @@ const UltraCreativeFooter = () => {
                   size={20}
                   className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
                 />
-              </motion.button>
+              </motion.a>
 
               <div className="grid grid-cols-3 gap-6 mt-12 w-full">
                 <SocialLink
@@ -78,7 +78,7 @@ const UltraCreativeFooter = () => {
                   label="LinkedIn"
                 />
                 <SocialLink
-                  href="mailto:babuvikas246@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=babuvikas246@gmail.com"
                   icon={<Mail />}
                   label="Email"
                 />

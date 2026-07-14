@@ -78,8 +78,8 @@ const ModernHeader = () => {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="mailto:babuvikas246@gmail.com"
-              target="_self"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=babuvikas246@gmail.com"
+              target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-black px-5 py-2 rounded-xl text-sm font-bold hover:bg-blue-500 hover:text-white transition-all duration-300 flex items-center gap-2"
             >
